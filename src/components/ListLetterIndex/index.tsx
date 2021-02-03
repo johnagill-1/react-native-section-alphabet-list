@@ -7,6 +7,7 @@ export const ListLetterIndex: React.FC<ListLetterIndexProps> = ({
   sectionData,
   onPressLetter,
   indexLetterColor
+  letterStyle
 }) => {
   const labelStyle = indexLetterColor ? { color: indexLetterColor } : {}
 
@@ -19,7 +20,7 @@ export const ListLetterIndex: React.FC<ListLetterIndexProps> = ({
         renderItem={({ item, index }) => (
           <TouchableOpacity testID="indexItem" onPress={() => onPressLetter(index)}>
             <View style={styles.letterIndexItem}>
-              <Text testID="indexItem__title" style={[styles.letterIndexLabel, labelStyle]}>{item.title}</Text>
+              <Text testID="indexItem__title" style={[styles.letterIndexLabel, labelStyle, letterStyle]}>{item.title}</Text>
             </View>
           </TouchableOpacity>
         )}
