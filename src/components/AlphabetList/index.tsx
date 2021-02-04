@@ -20,6 +20,7 @@ export const AlphabetList: React.FC<AlphabetListProps> = (props) => {
     uncategorizedAtTop = false,
     renderCustomSectionHeader,
     renderCustomItem,
+    letterStyle,
     ...sectionListProps
   } = props
 
@@ -87,6 +88,7 @@ export const AlphabetList: React.FC<AlphabetListProps> = (props) => {
         sectionData={sectionData}
         onPressLetter={onScrollToSection}
         indexLetterColor={indexLetterColor}
+        letterStyle={letterStyle}
       />
     </View>
   );

@@ -6,7 +6,7 @@ import { styles } from "./styles";
 export const ListLetterIndex: React.FC<ListLetterIndexProps> = ({
   sectionData,
   onPressLetter,
-  indexLetterColor
+  indexLetterColor,
   letterStyle
 }) => {
   const labelStyle = indexLetterColor ? { color: indexLetterColor } : {}

@@ -4,4 +4,5 @@ export interface ListLetterIndexProps {
     onPressLetter: (sectionIndex: number) => void;
     sectionData: ISectionData[];
     indexLetterColor?: string;
+    letterStyle?: any
 }
